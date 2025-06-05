@@ -1,1 +1,4 @@
-*.csv
+# *.csv
+#ignore CSVs folder
+# Ignore all CSV files in the CSVs folder
+CSVs/
