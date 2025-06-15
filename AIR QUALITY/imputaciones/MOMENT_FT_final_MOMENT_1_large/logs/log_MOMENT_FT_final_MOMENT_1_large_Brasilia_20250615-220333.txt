@@ -1,0 +1,37 @@
+--- INICIO DEL SCRIPT: 2025-06-15 22:03:33 ---
+
+--- 0. Carga de Datos Originales (Ground Truth) ---
+Datos originales cargados desde: CSVs\Air_Quality.csv
+Ground truth para Brasilia procesado. Shape: (8784, 10)
+Usando dispositivo: cuda
+
+===== Iniciando Fine-Tuning para: AQI =====
+  Iniciando fine-tuning para 'AQI'...
+  Epoch 1/1 (Train):   0%|          | 0/4 [00:00<?, ?it/s]  Epoch 1/1 (Train):   0%|          | 0/4 [00:10<?, ?it/s, loss=0.868]  Epoch 1/1 (Train):  25%|##5       | 1/4 [00:10<00:30, 10.18s/it, loss=0.868]  Epoch 1/1 (Train):  25%|##5       | 1/4 [00:13<00:30, 10.18s/it, loss=1]      Epoch 1/1 (Train):  50%|#####     | 2/4 [00:13<00:12,  6.26s/it, loss=1]  Epoch 1/1 (Train):  50%|#####     | 2/4 [00:17<00:12,  6.26s/it, loss=1.04]  Epoch 1/1 (Train):  75%|#######5  | 3/4 [00:17<00:05,  5.01s/it, loss=1.04]  Epoch 1/1 (Train):  75%|#######5  | 3/4 [00:17<00:05,  5.01s/it, loss=0.985]  Epoch 1/1 (Train): 100%|##########| 4/4 [00:17<00:00,  3.26s/it, loss=0.985]                                                                                  Epoch 1: Train Loss: 0.973594, Val Loss: 1.144874 (LR: 5.00e-05)
+      Nuevo mejor modelo guardado con Val Loss: 1.144874
+  Fine-tuning completado. Mejor Val Loss: 1.144874
+  Modelo para AQI afinado.
+
+--- Iniciando Fase de Imputación ---
+
+Procesando Escenario: RandomRows_20percent
+  Imputando:   0%|          | 0/2 [00:00<?, ?it/s]  Imputando:  50%|#####     | 1/2 [02:06<02:06, 126.88s/it]  Imputando: 100%|##########| 2/2 [02:07<00:00, 52.68s/it]                                                               Archivo imputado guardado: Brasilia_RandomRows_20percent_rep1_seed1202032594_imputed.csv
+
+Procesando Escenario: BlockRows_24h_20percent
+  Imputando:   0%|          | 0/2 [00:00<?, ?it/s]  Imputando:  50%|#####     | 1/2 [02:13<02:13, 133.70s/it]  Imputando: 100%|##########| 2/2 [02:14<00:00, 55.39s/it]                                                               Archivo imputado guardado: Brasilia_BlockRows_24h_20percent_rep1_seed837057928_imputed.csv
+
+Generando resúmenes de métricas...
+       City                 Scenario  Repetition        Seed  \
+0  Brasilia     RandomRows_20percent           1  1202032594   
+1  Brasilia  BlockRows_24h_20percent           1   837057928   
+
+                Imputation_Method Variable       MAE      RMSE  NRMAE_range  \
+0  MOMENT_FT_final_MOMENT_1_large      AQI  7.732915  9.829943     0.121682   
+1  MOMENT_FT_final_MOMENT_1_large      AQI  4.761336  6.699652     0.074923   
+
+   NRMSE_range  
+0     0.154680  
+1     0.105423  
+
+Proceso completado. Tiempo total: 5.04 minutos.
+--- FIN DEL SCRIPT: 2025-06-15 22:08:36 ---

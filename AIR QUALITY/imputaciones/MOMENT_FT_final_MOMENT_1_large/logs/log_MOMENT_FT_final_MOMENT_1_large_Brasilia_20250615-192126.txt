@@ -711,3 +711,11 @@ Usando dispositivo: cuda
 --- Iniciando Fase de Imputación ---
 
 Procesando Escenario: RandomRows_20percent
+--- INICIO DEL SCRIPT: 2025-06-15 22:03:33 ---
+
+--- 0. Carga de Datos Originales (Ground Truth) ---
+Datos originales cargados desde: CSVs\Air_Quality.csv
+Ground truth para Brasilia procesado. Shape: (8784, 10)
+Usando dispositivo: cuda
+
+===== Iniciando Fine-Tuning para: AQI =====
