@@ -1,0 +1,94 @@
+--- INICIO DEL SCRIPT: 2025-06-15 11:46:53 ---
+Log guardado en: c:\Users\felix\Documents\MÁSTER\TFM\TFM_Ambiental\AIR QUALITY\imputaciones\MOMENT_FT_SimImpute_MOMENT_1_large\logs\log_MOMENT_FT_SimImpute_MOMENT_1_large_Brasilia.txt
+
+--- 0. Carga de Datos Originales (Ground Truth) ---
+Datos originales (ground truth) cargados desde: CSVs\Air_Quality.csv
+Ground truth for Brasilia localized to America/Sao_Paulo and time features extracted. Shape: (8784, 12)
+Usando dispositivo: cpu
+
+===== Iniciando Fine-Tuning (Estrategia Imputación Simulada) para la variable: AQI =====
+Learning Rate para AQI: 0.0001
+  Iniciando fine-tuning (estrategia imputación simulada) para 'AQI' (5 épocas máx)...
+  Epoch 1/5 (Train):   0%|          | 0/1 [00:00<?, ?it/s]  Epoch 1/5 (Train):   0%|          | 0/1 [00:02<?, ?it/s, loss=1.02]  Epoch 1/5 (Train): 100%|##########| 1/1 [00:02<00:00,  2.64s/it, loss=1.02]                                                                                 Epoch 1: Train Loss: 1.017935, Val Loss: 1.202021 (LR: 1.00e-04)
+      Nuevo mejor modelo para 'AQI' (strat. sim impute) guardado con Val Loss: 1.202021
+  Epoch 2/5 (Train):   0%|          | 0/1 [00:00<?, ?it/s]  Epoch 2/5 (Train):   0%|          | 0/1 [00:02<?, ?it/s, loss=0.945]  Epoch 2/5 (Train): 100%|##########| 1/1 [00:02<00:00,  2.74s/it, loss=0.945]                                                                                  Epoch 2: Train Loss: 0.945011, Val Loss: 1.314824 (LR: 1.00e-04)
+  Epoch 3/5 (Train):   0%|          | 0/1 [00:00<?, ?it/s]  Epoch 3/5 (Train):   0%|          | 0/1 [00:02<?, ?it/s, loss=0.986]  Epoch 3/5 (Train): 100%|##########| 1/1 [00:02<00:00,  2.61s/it, loss=0.986]                                                                                  Epoch 3: Train Loss: 0.985591, Val Loss: 1.129542 (LR: 1.00e-04)
+      Nuevo mejor modelo para 'AQI' (strat. sim impute) guardado con Val Loss: 1.129542
+  Epoch 4/5 (Train):   0%|          | 0/1 [00:00<?, ?it/s]  Epoch 4/5 (Train):   0%|          | 0/1 [00:02<?, ?it/s, loss=0.859]  Epoch 4/5 (Train): 100%|##########| 1/1 [00:02<00:00,  2.92s/it, loss=0.859]                                                                                  Epoch 4: Train Loss: 0.858953, Val Loss: 1.140462 (LR: 1.00e-04)
+  Epoch 5/5 (Train):   0%|          | 0/1 [00:00<?, ?it/s]  Epoch 5/5 (Train):   0%|          | 0/1 [00:02<?, ?it/s, loss=1.03]  Epoch 5/5 (Train): 100%|##########| 1/1 [00:02<00:00,  2.53s/it, loss=1.03]                                                                                 Epoch 5: Train Loss: 1.025760, Val Loss: 1.227922 (LR: 1.00e-04)
+  Fine-tuning (strat. sim impute) para 'AQI' completado. Mejor Val Loss: 1.129542
+  Modelo para AQI (strat. sim impute) afinado y guardado/cargado.
+
+
+--- Fine-Tuning (Estrategia Imputación Simulada) completado para todas las variables objetivo. ---
+
+Procesando Escenario de Imputación: RandomRows_20percent
+  Repetición de Imputación: 1
+  Imputando variables para Rep 1:   0%|          | 0/1 [00:00<?, ?var/s]  Imputando variables para Rep 1: 100%|##########| 1/1 [00:03<00:00,  3.76s/var]                                                                                    Archivo imputado por MOMENT-FT-SimImpute guardado: Brasilia_RandomRows_20percent_rep1_seed1202032594_imputed_momentFT_SimImpute.csv
+    Métricas calculadas para MOMENT-FT-SimImpute, rep 1
+  Escenario de Imputación RandomRows_20percent completado.
+
+Procesando Escenario de Imputación: BlockRows_12h_20percent
+  Repetición de Imputación: 1
+  Imputando variables para Rep 1:   0%|          | 0/1 [00:00<?, ?var/s]  Imputando variables para Rep 1: 100%|##########| 1/1 [00:03<00:00,  3.29s/var]                                                                                    Archivo imputado por MOMENT-FT-SimImpute guardado: Brasilia_BlockRows_12h_20percent_rep1_seed2510790048_imputed_momentFT_SimImpute.csv
+    Métricas calculadas para MOMENT-FT-SimImpute, rep 1
+  Escenario de Imputación BlockRows_12h_20percent completado.
+
+Procesando Escenario de Imputación: BlockRows_24h_20percent
+  Repetición de Imputación: 1
+  Imputando variables para Rep 1:   0%|          | 0/1 [00:00<?, ?var/s]  Imputando variables para Rep 1: 100%|##########| 1/1 [00:03<00:00,  3.08s/var]                                                                                    Archivo imputado por MOMENT-FT-SimImpute guardado: Brasilia_BlockRows_24h_20percent_rep1_seed837057928_imputed_momentFT_SimImpute.csv
+    Métricas calculadas para MOMENT-FT-SimImpute, rep 1
+  Escenario de Imputación BlockRows_24h_20percent completado.
+
+Procesando Escenario de Imputación: BlockRows_36h_20percent
+  Repetición de Imputación: 1
+  Imputando variables para Rep 1:   0%|          | 0/1 [00:00<?, ?var/s]  Imputando variables para Rep 1: 100%|##########| 1/1 [00:03<00:00,  3.05s/var]                                                                                    Archivo imputado por MOMENT-FT-SimImpute guardado: Brasilia_BlockRows_36h_20percent_rep1_seed1572501156_imputed_momentFT_SimImpute.csv
+    Métricas calculadas para MOMENT-FT-SimImpute, rep 1
+  Escenario de Imputación BlockRows_36h_20percent completado.
+
+Procesando Escenario de Imputación: BlockRows_48h_20percent
+  Repetición de Imputación: 1
+  Imputando variables para Rep 1:   0%|          | 0/1 [00:00<?, ?var/s]  Imputando variables para Rep 1: 100%|##########| 1/1 [00:02<00:00,  2.97s/var]                                                                                    Archivo imputado por MOMENT-FT-SimImpute guardado: Brasilia_BlockRows_48h_20percent_rep1_seed107941404_imputed_momentFT_SimImpute.csv
+    Métricas calculadas para MOMENT-FT-SimImpute, rep 1
+  Escenario de Imputación BlockRows_48h_20percent completado.
+
+Procesando Escenario de Imputación: BlockRows_60h_20percent
+  Repetición de Imputación: 1
+  Imputando variables para Rep 1:   0%|          | 0/1 [00:00<?, ?var/s]  Imputando variables para Rep 1: 100%|##########| 1/1 [00:03<00:00,  3.02s/var]                                                                                    Archivo imputado por MOMENT-FT-SimImpute guardado: Brasilia_BlockRows_60h_20percent_rep1_seed2179968212_imputed_momentFT_SimImpute.csv
+    Métricas calculadas para MOMENT-FT-SimImpute, rep 1
+  Escenario de Imputación BlockRows_60h_20percent completado.
+
+Generando resúmenes de métricas MOMENT-FT-SimImpute...
+  Métricas detalladas MOMENT-FT-SimImpute guardadas en: c:\Users\felix\Documents\MÁSTER\TFM\TFM_Ambiental\AIR QUALITY\imputaciones\MOMENT_FT_SimImpute_MOMENT_1_large\metricas\ALL_metrics_detailed_MOMENT_FT_SimImpute_MOMENT_1_large_Brasilia.csv
+       City                 Scenario  Repetition        Seed  \
+0  Brasilia     RandomRows_20percent           1  1202032594   
+1  Brasilia  BlockRows_12h_20percent           1  2510790048   
+2  Brasilia  BlockRows_24h_20percent           1   837057928   
+3  Brasilia  BlockRows_36h_20percent           1  1572501156   
+4  Brasilia  BlockRows_48h_20percent           1   107941404   
+
+                    Imputation_Method Variable       MAE       RMSE  \
+0  MOMENT_FT_SimImpute_MOMENT_1_large      AQI  7.877141  10.063321   
+1  MOMENT_FT_SimImpute_MOMENT_1_large      AQI  4.506861   6.580056   
+2  MOMENT_FT_SimImpute_MOMENT_1_large      AQI  5.207031   7.525443   
+3  MOMENT_FT_SimImpute_MOMENT_1_large      AQI  6.334433   9.124856   
+4  MOMENT_FT_SimImpute_MOMENT_1_large      AQI  6.400656   8.454110   
+
+   NRMAE_range  NRMSE_range  
+0     0.123952     0.158353  
+1     0.070918     0.103541  
+2     0.081936     0.118418  
+3     0.099676     0.143585  
+4     0.100718     0.133031  
+  Resumen MOMENT-FT-SimImpute de variables guardado: c:\Users\felix\Documents\MÁSTER\TFM\TFM_Ambiental\AIR QUALITY\imputaciones\MOMENT_FT_SimImpute_MOMENT_1_large\metricas\metrics_variables_summary_MOMENT_FT_SimImpute_MOMENT_1_large_Brasilia.csv
+       City Variable   Avg_MAE  Avg_RMSE  Avg_NRMAE_range  Avg_NRMSE_range
+0  Brasilia      AQI  6.250222  8.608983         0.098351         0.135468
+  Resumen MOMENT-FT-SimImpute AQI guardado: c:\Users\felix\Documents\MÁSTER\TFM\TFM_Ambiental\AIR QUALITY\imputaciones\MOMENT_FT_SimImpute_MOMENT_1_large\metricas\metrics_aqi_combined_summary_MOMENT_FT_SimImpute_MOMENT_1_large_Brasilia.csv
+       City  Avg_MAE_AQI  Avg_RMSE_AQI  Avg_NRMAE_range_AQI  \
+0  Brasilia     6.250222      8.608983             0.098351   
+
+   Avg_NRMSE_range_AQI  
+0             0.135468  
+
+Proceso de Fine-Tuning (Estrategia Imputación Simulada) e Imputación con MOMENT completado. Tiempo total: 0.76 minutos.
+--- FIN DEL SCRIPT: 2025-06-15 11:47:39 ---
