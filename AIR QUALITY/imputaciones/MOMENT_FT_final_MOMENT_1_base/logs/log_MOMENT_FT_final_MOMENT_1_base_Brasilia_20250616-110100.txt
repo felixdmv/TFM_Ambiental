@@ -1,0 +1,212 @@
+--- INICIO DEL SCRIPT: 2025-06-16 11:01:00 ---
+
+--- 0. Carga de Datos Originales (Ground Truth) ---
+Datos originales cargados desde: CSVs\Air_Quality.csv
+Ground truth para Brasilia procesado. Shape: (8784, 10)
+Usando dispositivo: cpu
+
+===== Iniciando Fine-Tuning para: CO =====
+  Iniciando fine-tuning para 'CO'...
+  Epoch 1/1 (Train):   0%|          | 0/1 [00:00<?, ?it/s]  Epoch 1/1 (Train):   0%|          | 0/1 [00:05<?, ?it/s, loss=0.725]  Epoch 1/1 (Train): 100%|##########| 1/1 [00:05<00:00,  5.38s/it, loss=0.725]                                                                                  Epoch 1: Train Loss: 0.725285, Val Loss: 1.451060 (LR: 5.00e-05)
+      Nuevo mejor modelo guardado con Val Loss: 1.451060
+  Fine-tuning completado. Mejor Val Loss: 1.451060
+  Modelo para CO afinado.
+
+===== Iniciando Fine-Tuning para: NO2 =====
+  Iniciando fine-tuning para 'NO2'...
+  Epoch 1/1 (Train):   0%|          | 0/1 [00:00<?, ?it/s]  Epoch 1/1 (Train):   0%|          | 0/1 [00:05<?, ?it/s, loss=1.14]  Epoch 1/1 (Train): 100%|##########| 1/1 [00:05<00:00,  5.51s/it, loss=1.14]                                                                                 Epoch 1: Train Loss: 1.144904, Val Loss: 1.292467 (LR: 5.00e-05)
+      Nuevo mejor modelo guardado con Val Loss: 1.292467
+  Fine-tuning completado. Mejor Val Loss: 1.292467
+  Modelo para NO2 afinado.
+
+===== Iniciando Fine-Tuning para: SO2 =====
+  Iniciando fine-tuning para 'SO2'...
+  Epoch 1/1 (Train):   0%|          | 0/1 [00:00<?, ?it/s]  Epoch 1/1 (Train):   0%|          | 0/1 [00:04<?, ?it/s, loss=1.09]  Epoch 1/1 (Train): 100%|##########| 1/1 [00:04<00:00,  4.93s/it, loss=1.09]                                                                                 Epoch 1: Train Loss: 1.093144, Val Loss: 1.650839 (LR: 5.00e-05)
+      Nuevo mejor modelo guardado con Val Loss: 1.650839
+  Fine-tuning completado. Mejor Val Loss: 1.650839
+  Modelo para SO2 afinado.
+
+===== Iniciando Fine-Tuning para: O3 =====
+  Iniciando fine-tuning para 'O3'...
+  Epoch 1/1 (Train):   0%|          | 0/1 [00:00<?, ?it/s]  Epoch 1/1 (Train):   0%|          | 0/1 [00:04<?, ?it/s, loss=0.835]  Epoch 1/1 (Train): 100%|##########| 1/1 [00:04<00:00,  4.71s/it, loss=0.835]                                                                                  Epoch 1: Train Loss: 0.835313, Val Loss: 1.359434 (LR: 5.00e-05)
+      Nuevo mejor modelo guardado con Val Loss: 1.359434
+  Fine-tuning completado. Mejor Val Loss: 1.359434
+  Modelo para O3 afinado.
+
+===== Iniciando Fine-Tuning para: PM2.5 =====
+  Iniciando fine-tuning para 'PM2.5'...
+  Epoch 1/1 (Train):   0%|          | 0/1 [00:00<?, ?it/s]  Epoch 1/1 (Train):   0%|          | 0/1 [00:05<?, ?it/s, loss=0.873]  Epoch 1/1 (Train): 100%|##########| 1/1 [00:05<00:00,  5.51s/it, loss=0.873]                                                                                  Epoch 1: Train Loss: 0.872717, Val Loss: 1.034286 (LR: 5.00e-05)
+      Nuevo mejor modelo guardado con Val Loss: 1.034286
+  Fine-tuning completado. Mejor Val Loss: 1.034286
+  Modelo para PM2.5 afinado.
+
+===== Iniciando Fine-Tuning para: PM10 =====
+  Iniciando fine-tuning para 'PM10'...
+  Epoch 1/1 (Train):   0%|          | 0/1 [00:00<?, ?it/s]  Epoch 1/1 (Train):   0%|          | 0/1 [00:05<?, ?it/s, loss=0.946]  Epoch 1/1 (Train): 100%|##########| 1/1 [00:05<00:00,  5.01s/it, loss=0.946]                                                                                  Epoch 1: Train Loss: 0.946108, Val Loss: 0.838246 (LR: 5.00e-05)
+      Nuevo mejor modelo guardado con Val Loss: 0.838246
+  Fine-tuning completado. Mejor Val Loss: 0.838246
+  Modelo para PM10 afinado.
+
+===== Iniciando Fine-Tuning para: AQI =====
+  Iniciando fine-tuning para 'AQI'...
+  Epoch 1/1 (Train):   0%|          | 0/1 [00:00<?, ?it/s]  Epoch 1/1 (Train):   0%|          | 0/1 [00:04<?, ?it/s, loss=0.875]  Epoch 1/1 (Train): 100%|##########| 1/1 [00:04<00:00,  4.99s/it, loss=0.875]                                                                                  Epoch 1: Train Loss: 0.875196, Val Loss: 0.994673 (LR: 5.00e-05)
+      Nuevo mejor modelo guardado con Val Loss: 0.994673
+  Fine-tuning completado. Mejor Val Loss: 0.994673
+  Modelo para AQI afinado.
+
+--- Iniciando Fase de Imputación ---
+Forzando la imputación en el dispositivo: CPU
+
+Procesando Escenario: RandomRows_20percent
+  Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:05<00:00,  5.48s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:05<00:00,  5.63s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:05<00:00,  5.64s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:05<00:00,  5.50s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:05<00:00,  5.76s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:06<00:00,  6.08s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:06<00:00,  6.16s/it]                                                                     Archivo imputado guardado: Brasilia_RandomRows_20percent_rep1_seed1202032594_imputed.csv
+
+Procesando Escenario: BlockRows_12h_20percent
+  Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:05<00:00,  5.88s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:06<00:00,  6.91s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:06<00:00,  6.12s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:05<00:00,  5.81s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:06<00:00,  6.44s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:06<00:00,  6.05s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:05<00:00,  5.66s/it]                                                                     Archivo imputado guardado: Brasilia_BlockRows_12h_20percent_rep1_seed2510790048_imputed.csv
+
+Procesando Escenario: BlockRows_24h_20percent
+  Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:05<00:00,  5.82s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:05<00:00,  5.65s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:05<00:00,  5.30s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:05<00:00,  5.47s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:05<00:00,  5.51s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:05<00:00,  5.19s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:05<00:00,  5.22s/it]                                                                     Archivo imputado guardado: Brasilia_BlockRows_24h_20percent_rep1_seed837057928_imputed.csv
+
+Procesando Escenario: BlockRows_36h_20percent
+  Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:05<00:00,  5.42s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:05<00:00,  5.11s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:05<00:00,  5.10s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:05<00:00,  5.30s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:05<00:00,  5.24s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:05<00:00,  5.33s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:05<00:00,  5.10s/it]                                                                     Archivo imputado guardado: Brasilia_BlockRows_36h_20percent_rep1_seed1572501156_imputed.csv
+
+Procesando Escenario: BlockRows_48h_20percent
+  Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:05<00:00,  5.23s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:05<00:00,  5.18s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:05<00:00,  5.87s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:05<00:00,  5.44s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:06<00:00,  6.64s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:06<00:00,  6.48s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:06<00:00,  6.78s/it]                                                                     Archivo imputado guardado: Brasilia_BlockRows_48h_20percent_rep1_seed107941404_imputed.csv
+
+Procesando Escenario: BlockRows_60h_20percent
+  Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:06<00:00,  6.59s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:06<00:00,  6.52s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:06<00:00,  6.38s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:06<00:00,  6.43s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:06<00:00,  6.19s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:06<00:00,  6.53s/it]                                                                   Imputando en CPU:   0%|          | 0/1 [00:00<?, ?it/s]  Imputando en CPU: 100%|##########| 1/1 [00:06<00:00,  6.20s/it]                                                                     Archivo imputado guardado: Brasilia_BlockRows_60h_20percent_rep1_seed2179968212_imputed.csv
+
+Generando resúmenes de métricas...
+        City                 Scenario  Repetition        Seed  \
+0   Brasilia     RandomRows_20percent           1  1202032594   
+1   Brasilia     RandomRows_20percent           1  1202032594   
+2   Brasilia     RandomRows_20percent           1  1202032594   
+3   Brasilia     RandomRows_20percent           1  1202032594   
+4   Brasilia     RandomRows_20percent           1  1202032594   
+5   Brasilia     RandomRows_20percent           1  1202032594   
+6   Brasilia     RandomRows_20percent           1  1202032594   
+7   Brasilia  BlockRows_12h_20percent           1  2510790048   
+8   Brasilia  BlockRows_12h_20percent           1  2510790048   
+9   Brasilia  BlockRows_12h_20percent           1  2510790048   
+10  Brasilia  BlockRows_12h_20percent           1  2510790048   
+11  Brasilia  BlockRows_12h_20percent           1  2510790048   
+12  Brasilia  BlockRows_12h_20percent           1  2510790048   
+13  Brasilia  BlockRows_12h_20percent           1  2510790048   
+14  Brasilia  BlockRows_24h_20percent           1   837057928   
+15  Brasilia  BlockRows_24h_20percent           1   837057928   
+16  Brasilia  BlockRows_24h_20percent           1   837057928   
+17  Brasilia  BlockRows_24h_20percent           1   837057928   
+18  Brasilia  BlockRows_24h_20percent           1   837057928   
+19  Brasilia  BlockRows_24h_20percent           1   837057928   
+20  Brasilia  BlockRows_24h_20percent           1   837057928   
+21  Brasilia  BlockRows_36h_20percent           1  1572501156   
+22  Brasilia  BlockRows_36h_20percent           1  1572501156   
+23  Brasilia  BlockRows_36h_20percent           1  1572501156   
+24  Brasilia  BlockRows_36h_20percent           1  1572501156   
+25  Brasilia  BlockRows_36h_20percent           1  1572501156   
+26  Brasilia  BlockRows_36h_20percent           1  1572501156   
+27  Brasilia  BlockRows_36h_20percent           1  1572501156   
+28  Brasilia  BlockRows_48h_20percent           1   107941404   
+29  Brasilia  BlockRows_48h_20percent           1   107941404   
+30  Brasilia  BlockRows_48h_20percent           1   107941404   
+31  Brasilia  BlockRows_48h_20percent           1   107941404   
+32  Brasilia  BlockRows_48h_20percent           1   107941404   
+33  Brasilia  BlockRows_48h_20percent           1   107941404   
+34  Brasilia  BlockRows_48h_20percent           1   107941404   
+35  Brasilia  BlockRows_60h_20percent           1  2179968212   
+36  Brasilia  BlockRows_60h_20percent           1  2179968212   
+37  Brasilia  BlockRows_60h_20percent           1  2179968212   
+38  Brasilia  BlockRows_60h_20percent           1  2179968212   
+39  Brasilia  BlockRows_60h_20percent           1  2179968212   
+40  Brasilia  BlockRows_60h_20percent           1  2179968212   
+41  Brasilia  BlockRows_60h_20percent           1  2179968212   
+
+                Imputation_Method Variable        MAE        RMSE  \
+0   MOMENT_FT_final_MOMENT_1_base       CO  67.317034   97.420490   
+1   MOMENT_FT_final_MOMENT_1_base      NO2   6.916098    9.607240   
+2   MOMENT_FT_final_MOMENT_1_base      SO2   0.741264    0.942131   
+3   MOMENT_FT_final_MOMENT_1_base       O3  20.967805   26.659248   
+4   MOMENT_FT_final_MOMENT_1_base    PM2.5   3.216234    4.566595   
+5   MOMENT_FT_final_MOMENT_1_base     PM10   4.314304    6.093304   
+6   MOMENT_FT_final_MOMENT_1_base      AQI   7.827953    9.993893   
+7   MOMENT_FT_final_MOMENT_1_base       CO  70.939129  103.293369   
+8   MOMENT_FT_final_MOMENT_1_base      NO2   6.914163    9.345593   
+9   MOMENT_FT_final_MOMENT_1_base      SO2   0.744803    0.936781   
+10  MOMENT_FT_final_MOMENT_1_base       O3  20.392303   25.465775   
+11  MOMENT_FT_final_MOMENT_1_base    PM2.5   3.210689    4.765722   
+12  MOMENT_FT_final_MOMENT_1_base     PM10   4.342613    6.464386   
+13  MOMENT_FT_final_MOMENT_1_base      AQI   7.596315    9.676547   
+14  MOMENT_FT_final_MOMENT_1_base       CO  68.085311   94.919703   
+15  MOMENT_FT_final_MOMENT_1_base      NO2   6.672897    9.142588   
+16  MOMENT_FT_final_MOMENT_1_base      SO2   0.717114    0.901855   
+17  MOMENT_FT_final_MOMENT_1_base       O3  20.843413   26.019413   
+18  MOMENT_FT_final_MOMENT_1_base    PM2.5   3.176919    4.492204   
+19  MOMENT_FT_final_MOMENT_1_base     PM10   4.238477    5.976034   
+20  MOMENT_FT_final_MOMENT_1_base      AQI   7.944821   10.104157   
+21  MOMENT_FT_final_MOMENT_1_base       CO  63.968289   90.542883   
+22  MOMENT_FT_final_MOMENT_1_base      NO2   6.240766    8.305191   
+23  MOMENT_FT_final_MOMENT_1_base      SO2   0.714696    0.902879   
+24  MOMENT_FT_final_MOMENT_1_base       O3  19.998683   25.142419   
+25  MOMENT_FT_final_MOMENT_1_base    PM2.5   3.430531    4.915410   
+26  MOMENT_FT_final_MOMENT_1_base     PM10   4.628688    6.670328   
+27  MOMENT_FT_final_MOMENT_1_base      AQI   7.668014    9.975024   
+28  MOMENT_FT_final_MOMENT_1_base       CO  66.783820  102.964673   
+29  MOMENT_FT_final_MOMENT_1_base      NO2   6.555369    9.340646   
+30  MOMENT_FT_final_MOMENT_1_base      SO2   0.726046    0.928490   
+31  MOMENT_FT_final_MOMENT_1_base       O3  20.487328   25.381298   
+32  MOMENT_FT_final_MOMENT_1_base    PM2.5   3.139231    4.500974   
+33  MOMENT_FT_final_MOMENT_1_base     PM10   4.373332    6.236417   
+34  MOMENT_FT_final_MOMENT_1_base      AQI   7.678536    9.765204   
+35  MOMENT_FT_final_MOMENT_1_base       CO  73.060990  100.827398   
+36  MOMENT_FT_final_MOMENT_1_base      NO2   7.046099    9.688213   
+37  MOMENT_FT_final_MOMENT_1_base      SO2   0.748520    0.951597   
+38  MOMENT_FT_final_MOMENT_1_base       O3  20.788207   26.115091   
+39  MOMENT_FT_final_MOMENT_1_base    PM2.5   3.159840    4.530282   
+40  MOMENT_FT_final_MOMENT_1_base     PM10   4.239802    6.041058   
+41  MOMENT_FT_final_MOMENT_1_base      AQI   7.865333   10.054093   
+
+    NRMAE_range  NRMSE_range  
+0      0.076150     0.110204  
+1      0.119863     0.166503  
+2      0.137271     0.174469  
+3      0.121906     0.154996  
+4      0.076943     0.109249  
+5      0.071905     0.101555  
+6      0.123178     0.157260  
+7      0.080248     0.116848  
+8      0.119830     0.161969  
+9      0.137927     0.173478  
+10     0.118560     0.148057  
+11     0.076811     0.114012  
+12     0.072377     0.107740  
+13     0.119533     0.152267  
+14     0.077020     0.107375  
+15     0.115648     0.158450  
+16     0.132799     0.167010  
+17     0.121183     0.151276  
+18     0.076003     0.107469  
+19     0.070641     0.099601  
+20     0.125017     0.158995  
+21     0.072362     0.102424  
+22     0.108159     0.143937  
+23     0.132351     0.167200  
+24     0.116271     0.146177  
+25     0.082070     0.117594  
+26     0.077145     0.111172  
+27     0.120661     0.156963  
+28     0.075547     0.116476  
+29     0.113611     0.161883  
+30     0.134453     0.171943  
+31     0.119112     0.147566  
+32     0.075101     0.107679  
+33     0.072889     0.103940  
+34     0.120827     0.153662  
+35     0.082648     0.114058  
+36     0.122116     0.167907  
+37     0.138615     0.176222  
+38     0.120862     0.151832  
+39     0.075594     0.108380  
+40     0.070663     0.100684  
+41     0.123766     0.158208  
+
+Proceso completado. Tiempo total: 5.02 minutos.
+--- FIN DEL SCRIPT: 2025-06-16 11:06:02 ---
