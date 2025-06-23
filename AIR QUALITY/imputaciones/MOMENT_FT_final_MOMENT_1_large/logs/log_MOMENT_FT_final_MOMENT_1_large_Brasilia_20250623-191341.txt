@@ -331,3 +331,38 @@ Procesando Escenario: RandomRows_20percent
   Imputando:   0%|          | 0/1 [00:00<?, ?batch/s][A
   Imputando: 100%|##########| 1/1 [00:25<00:00, 25.43s/batch][A
                                                              [A  Imputando Rep 1: 100%|##########| 2/2 [00:52<00:00, 26.18s/var]  Imputando Rep 1: 100%|##########| 2/2 [00:52<00:00, 26.33s/var]
+--- INICIO DEL SCRIPT: 2025-06-23 20:14:36 ---
+
+--- 0. Carga de Datos y Modelo Base ---
+Datos originales cargados desde: CSVs\Air_Quality.csv
+Usando dispositivo: cuda
+Cargando modelo MOMENT base: AutonLab/MOMENT-1-large
+Modelo base cargado.
+
+
+==================== PROCESANDO CIUDAD: Brasilia ====================
+
+--- Fine-Tuning para: CO en Brasilia ---
+  Epoch 1/1 (Train):   0%|          | 0/1 [00:00<?, ?it/s]  Epoch 1/1 (Train):   0%|          | 0/1 [00:02<?, ?it/s, loss=0.0313]  Epoch 1/1 (Train): 100%|##########| 1/1 [00:02<00:00,  2.08s/it, loss=0.0313]                                                                                   Epoch 1: Train Loss: 0.031286, Val Loss: 0.103052
+  Fine-tuning completado. Mejor Val Loss: 0.103052
+
+--- Fine-Tuning para: AQI en Brasilia ---
+  Epoch 1/1 (Train):   0%|          | 0/1 [00:00<?, ?it/s]  Epoch 1/1 (Train):   0%|          | 0/1 [00:02<?, ?it/s, loss=0.113]  Epoch 1/1 (Train): 100%|##########| 1/1 [00:02<00:00,  2.13s/it, loss=0.113]                                                                                  Epoch 1: Train Loss: 0.113230, Val Loss: 0.134008
+  Fine-tuning completado. Mejor Val Loss: 0.134008
+
+--- Iniciando Fase de Imputación para Brasilia ---
+
+Procesando Escenario: RandomRows_20percent
+  Imputando Rep 1:   0%|          | 0/2 [00:00<?, ?var/s]
+  Imputando:   0%|          | 0/1 [00:00<?, ?batch/s][A
+  Imputando: 100%|##########| 1/1 [00:28<00:00, 28.03s/batch][A
+                                                             [A  Imputando Rep 1:  50%|#####     | 1/2 [00:28<00:28, 28.08s/var]
+  Imputando:   0%|          | 0/1 [00:00<?, ?batch/s][A
+  Imputando: 100%|##########| 1/1 [00:24<00:00, 24.14s/batch][A
+                                                             [A  Imputando Rep 1: 100%|##########| 2/2 [00:52<00:00, 25.79s/var]  Imputando Rep 1: 100%|##########| 2/2 [00:52<00:00, 26.14s/var]
+    5 gráficos guardados en: c:\Users\felix\Documents\MÁSTER\TFM\TFM_Ambiental\AIR QUALITY\imputaciones\MOMENT_FT_final_MOMENT_1_large\plots\Brasilia\RandomRows_20percent
+
+Procesando Escenario: BlockRows_12h_20percent
+  Imputando Rep 1:   0%|          | 0/2 [00:00<?, ?var/s]
+  Imputando:   0%|          | 0/1 [00:00<?, ?batch/s][A
+                                                     [A  Imputando Rep 1:   0%|          | 0/2 [00:14<?, ?var/s]

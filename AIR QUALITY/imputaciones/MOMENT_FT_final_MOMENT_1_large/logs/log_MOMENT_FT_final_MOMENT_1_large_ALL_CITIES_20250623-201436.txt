@@ -32,3 +32,4 @@ Procesando Escenario: RandomRows_20percent
 Procesando Escenario: BlockRows_12h_20percent
   Imputando Rep 1:   0%|          | 0/2 [00:00<?, ?var/s]
   Imputando:   0%|          | 0/1 [00:00<?, ?batch/s][A
+                                                     [A  Imputando Rep 1:   0%|          | 0/2 [00:14<?, ?var/s]
