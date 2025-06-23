@@ -1,0 +1,45 @@
+--- INICIO DEL SCRIPT: 2025-06-23 20:10:54 ---
+
+--- 0. Carga de Datos y Modelo Base ---
+Datos originales cargados desde: CSVs\Air_Quality.csv
+Usando dispositivo: cuda
+Cargando modelo MOMENT base: AutonLab/MOMENT-1-large
+Modelo base cargado.
+
+
+==================== PROCESANDO CIUDAD: Brasilia ====================
+
+--- Fine-Tuning para: CO en Brasilia ---
+  Epoch 1/1 (Train):   0%|          | 0/1 [00:00<?, ?it/s]  Epoch 1/1 (Train):   0%|          | 0/1 [00:02<?, ?it/s, loss=0.0356]  Epoch 1/1 (Train): 100%|##########| 1/1 [00:02<00:00,  2.27s/it, loss=0.0356]                                                                                   Epoch 1: Train Loss: 0.035553, Val Loss: 0.108443
+  Fine-tuning completado. Mejor Val Loss: 0.108443
+
+--- Fine-Tuning para: AQI en Brasilia ---
+  Epoch 1/1 (Train):   0%|          | 0/1 [00:00<?, ?it/s]  Epoch 1/1 (Train):   0%|          | 0/1 [00:02<?, ?it/s, loss=0.103]  Epoch 1/1 (Train): 100%|##########| 1/1 [00:02<00:00,  2.11s/it, loss=0.103]                                                                                  Epoch 1: Train Loss: 0.103289, Val Loss: 0.118958
+  Fine-tuning completado. Mejor Val Loss: 0.118958
+
+--- Iniciando Fase de Imputación para Brasilia ---
+
+Procesando Escenario: RandomRows_20percent
+  Imputando Rep 1:   0%|          | 0/2 [00:00<?, ?var/s]
+  Imputando:   0%|          | 0/1 [00:00<?, ?batch/s][A
+  Imputando: 100%|##########| 1/1 [00:27<00:00, 27.09s/batch][A
+                                                             [A  Imputando Rep 1:  50%|#####     | 1/2 [00:27<00:27, 27.17s/var]
+  Imputando:   0%|          | 0/1 [00:00<?, ?batch/s][A
+  Imputando: 100%|##########| 1/1 [00:25<00:00, 25.43s/batch][A
+                                                             [A  Imputando Rep 1: 100%|##########| 2/2 [00:52<00:00, 26.18s/var]  Imputando Rep 1: 100%|##########| 2/2 [00:52<00:00, 26.33s/var]
+--- INICIO DEL SCRIPT: 2025-06-23 20:14:36 ---
+
+--- 0. Carga de Datos y Modelo Base ---
+Datos originales cargados desde: CSVs\Air_Quality.csv
+Usando dispositivo: cuda
+Cargando modelo MOMENT base: AutonLab/MOMENT-1-large
+Modelo base cargado.
+
+
+==================== PROCESANDO CIUDAD: Brasilia ====================
+
+--- Fine-Tuning para: CO en Brasilia ---
+  Epoch 1/1 (Train):   0%|          | 0/1 [00:00<?, ?it/s]  Epoch 1/1 (Train):   0%|          | 0/1 [00:02<?, ?it/s, loss=0.0313]  Epoch 1/1 (Train): 100%|##########| 1/1 [00:02<00:00,  2.08s/it, loss=0.0313]                                                                                   Epoch 1: Train Loss: 0.031286, Val Loss: 0.103052
+  Fine-tuning completado. Mejor Val Loss: 0.103052
+
+--- Fine-Tuning para: AQI en Brasilia ---
