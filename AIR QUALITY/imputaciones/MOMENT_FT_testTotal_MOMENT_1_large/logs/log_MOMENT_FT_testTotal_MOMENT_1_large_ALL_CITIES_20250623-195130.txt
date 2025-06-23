@@ -1,178 +1,0 @@
---- INICIO DEL SCRIPT: 2025-06-23 19:51:30 ---
-
---- 0. Carga de Datos y Modelo Base ---
-Datos originales cargados desde: CSVs\Air_Quality.csv
-Usando dispositivo: cuda
-Cargando modelo MOMENT base: AutonLab/MOMENT-1-large
-Modelo base cargado.
-
-
-==================== PROCESANDO CIUDAD: Brasilia ====================
-
---- Fine-Tuning para: CO en Brasilia ---
-  Epoch 1/1 (Train):   0%|          | 0/1 [00:00<?, ?it/s]  Epoch 1/1 (Train):   0%|          | 0/1 [00:02<?, ?it/s, loss=0.0332]  Epoch 1/1 (Train): 100%|##########| 1/1 [00:02<00:00,  2.09s/it, loss=0.0332]                                                                                   Epoch 1: Train Loss: 0.033185, Val Loss: 0.091159
---- INICIO DEL SCRIPT: 2025-06-23 19:53:22 ---
-
---- 0. Carga de Datos y Modelo Base ---
-Datos originales cargados desde: CSVs\Air_Quality.csv
-Usando dispositivo: cuda
-Cargando modelo MOMENT base: AutonLab/MOMENT-1-large
-Modelo base cargado.
-
-
-==================== PROCESANDO CIUDAD: Brasilia ====================
-
---- Fine-Tuning para: CO en Brasilia ---
-  Epoch 1/1 (Train):   0%|          | 0/1 [00:00<?, ?it/s]  Epoch 1/1 (Train):   0%|          | 0/1 [00:02<?, ?it/s, loss=0.0374]  Epoch 1/1 (Train): 100%|##########| 1/1 [00:02<00:00,  2.15s/it, loss=0.0374]                                                                                   Epoch 1: Train Loss: 0.037445, Val Loss: 0.125541
-  Fine-tuning completado. Mejor Val Loss: 0.125541
-
---- Fine-Tuning para: AQI en Brasilia ---
-  Epoch 1/1 (Train):   0%|          | 0/1 [00:00<?, ?it/s]  Epoch 1/1 (Train):   0%|          | 0/1 [00:02<?, ?it/s, loss=0.118]  Epoch 1/1 (Train): 100%|##########| 1/1 [00:02<00:00,  2.08s/it, loss=0.118]                                                                                  Epoch 1: Train Loss: 0.118225, Val Loss: 0.130777
-  Fine-tuning completado. Mejor Val Loss: 0.130777
-
---- Iniciando Fase de Imputación para Brasilia ---
-
-Procesando Escenario: RandomRows_20percent
-  Imputando Rep 1:   0%|          | 0/2 [00:00<?, ?var/s]
-  Imputando:   0%|          | 0/1 [00:00<?, ?batch/s][A
-  Imputando: 100%|##########| 1/1 [00:25<00:00, 25.92s/batch][A
-                                                             [A  Imputando Rep 1:  50%|#####     | 1/2 [00:25<00:25, 25.96s/var]
-  Imputando:   0%|          | 0/1 [00:00<?, ?batch/s][A
-  Imputando: 100%|##########| 1/1 [00:24<00:00, 24.13s/batch][A
-                                                             [A  Imputando Rep 1: 100%|##########| 2/2 [00:50<00:00, 24.91s/var]  Imputando Rep 1: 100%|##########| 2/2 [00:50<00:00, 25.07s/var]
-
-Procesando Escenario: BlockRows_12h_20percent
-  Imputando Rep 1:   0%|          | 0/2 [00:00<?, ?var/s]
-  Imputando:   0%|          | 0/1 [00:00<?, ?batch/s][A
-  Imputando: 100%|##########| 1/1 [00:24<00:00, 24.87s/batch][A
-                                                             [A  Imputando Rep 1:  50%|#####     | 1/2 [00:24<00:24, 24.91s/var]
-  Imputando:   0%|          | 0/1 [00:00<?, ?batch/s][A
-  Imputando: 100%|##########| 1/1 [00:24<00:00, 24.96s/batch][A
-                                                             [A  Imputando Rep 1: 100%|##########| 2/2 [00:49<00:00, 24.97s/var]  Imputando Rep 1: 100%|##########| 2/2 [00:49<00:00, 24.96s/var]
-
-Procesando Escenario: BlockRows_24h_20percent
-  Imputando Rep 1:   0%|          | 0/2 [00:00<?, ?var/s]
-  Imputando:   0%|          | 0/1 [00:00<?, ?batch/s][A
-  Imputando: 100%|##########| 1/1 [00:24<00:00, 24.38s/batch][A
-                                                             [A  Imputando Rep 1:  50%|#####     | 1/2 [00:24<00:24, 24.42s/var]
-  Imputando:   0%|          | 0/1 [00:00<?, ?batch/s][A
-  Imputando: 100%|##########| 1/1 [00:24<00:00, 24.58s/batch][A
-                                                             [A  Imputando Rep 1: 100%|##########| 2/2 [00:49<00:00, 24.54s/var]  Imputando Rep 1: 100%|##########| 2/2 [00:49<00:00, 24.53s/var]
-
-Procesando Escenario: BlockRows_36h_20percent
-  Imputando Rep 1:   0%|          | 0/2 [00:00<?, ?var/s]
-  Imputando:   0%|          | 0/1 [00:00<?, ?batch/s][A
-  Imputando: 100%|##########| 1/1 [00:26<00:00, 26.90s/batch][A
-                                                             [A  Imputando Rep 1:  50%|#####     | 1/2 [00:26<00:26, 26.95s/var]
-  Imputando:   0%|          | 0/1 [00:00<?, ?batch/s][A
-  Imputando: 100%|##########| 1/1 [00:25<00:00, 25.98s/batch][A
-                                                             [A  Imputando Rep 1: 100%|##########| 2/2 [00:52<00:00, 26.41s/var]  Imputando Rep 1: 100%|##########| 2/2 [00:52<00:00, 26.49s/var]
-
-Procesando Escenario: BlockRows_48h_20percent
-  Imputando Rep 1:   0%|          | 0/2 [00:00<?, ?var/s]
-  Imputando:   0%|          | 0/1 [00:00<?, ?batch/s][A
-  Imputando: 100%|##########| 1/1 [00:25<00:00, 25.62s/batch][A
-                                                             [A  Imputando Rep 1:  50%|#####     | 1/2 [00:25<00:25, 25.67s/var]
-  Imputando:   0%|          | 0/1 [00:00<?, ?batch/s][A
-  Imputando: 100%|##########| 1/1 [00:24<00:00, 24.33s/batch][A
-                                                             [A  Imputando Rep 1: 100%|##########| 2/2 [00:50<00:00, 24.91s/var]  Imputando Rep 1: 100%|##########| 2/2 [00:50<00:00, 25.03s/var]
-
-Procesando Escenario: BlockRows_60h_20percent
-  Imputando Rep 1:   0%|          | 0/2 [00:00<?, ?var/s]
-  Imputando:   0%|          | 0/1 [00:00<?, ?batch/s][A
-  Imputando: 100%|##########| 1/1 [00:26<00:00, 26.57s/batch][A
-                                                             [A  Imputando Rep 1:  50%|#####     | 1/2 [00:26<00:26, 26.62s/var]
-  Imputando:   0%|          | 0/1 [00:00<?, ?batch/s][A
-  Imputando: 100%|##########| 1/1 [00:24<00:00, 24.32s/batch][A
-                                                             [A  Imputando Rep 1: 100%|##########| 2/2 [00:50<00:00, 25.29s/var]  Imputando Rep 1: 100%|##########| 2/2 [00:50<00:00, 25.49s/var]
-
-
-==================== PROCESANDO CIUDAD: Cairo ====================
-
---- Fine-Tuning para: CO en Cairo ---
-  Epoch 1/1 (Train):   0%|          | 0/1 [00:00<?, ?it/s]  Epoch 1/1 (Train):   0%|          | 0/1 [00:02<?, ?it/s, loss=0.0496]  Epoch 1/1 (Train): 100%|##########| 1/1 [00:02<00:00,  2.15s/it, loss=0.0496]                                                                                   Epoch 1: Train Loss: 0.049563, Val Loss: 0.052148
-  Fine-tuning completado. Mejor Val Loss: 0.052148
-
---- Fine-Tuning para: AQI en Cairo ---
-  Epoch 1/1 (Train):   0%|          | 0/1 [00:00<?, ?it/s]  Epoch 1/1 (Train):   0%|          | 0/1 [00:02<?, ?it/s, loss=0.095]  Epoch 1/1 (Train): 100%|##########| 1/1 [00:02<00:00,  2.20s/it, loss=0.095]                                                                                  Epoch 1: Train Loss: 0.095031, Val Loss: 0.073219
-  Fine-tuning completado. Mejor Val Loss: 0.073219
-
---- Iniciando Fase de Imputación para Cairo ---
-
-Procesando Escenario: RandomRows_20percent
-  Imputando Rep 1:   0%|          | 0/2 [00:00<?, ?var/s]
-  Imputando:   0%|          | 0/1 [00:00<?, ?batch/s][A
-  Imputando: 100%|##########| 1/1 [00:25<00:00, 25.05s/batch][A
-                                                             [A  Imputando Rep 1:  50%|#####     | 1/2 [00:25<00:25, 25.09s/var]
-  Imputando:   0%|          | 0/1 [00:00<?, ?batch/s][A
-  Imputando: 100%|##########| 1/1 [00:27<00:00, 27.27s/batch][A
-                                                             [A  Imputando Rep 1: 100%|##########| 2/2 [00:52<00:00, 26.41s/var]  Imputando Rep 1: 100%|##########| 2/2 [00:52<00:00, 26.21s/var]
-
-Procesando Escenario: BlockRows_12h_20percent
-  Imputando Rep 1:   0%|          | 0/2 [00:00<?, ?var/s]
-  Imputando:   0%|          | 0/1 [00:00<?, ?batch/s][A
-                                                     [A  Imputando Rep 1:   0%|          | 0/2 [00:03<?, ?var/s]
---- INICIO DEL SCRIPT: 2025-06-23 20:10:54 ---
-
---- 0. Carga de Datos y Modelo Base ---
-Datos originales cargados desde: CSVs\Air_Quality.csv
-Usando dispositivo: cuda
-Cargando modelo MOMENT base: AutonLab/MOMENT-1-large
-Modelo base cargado.
-
-
-==================== PROCESANDO CIUDAD: Brasilia ====================
-
---- Fine-Tuning para: CO en Brasilia ---
-  Epoch 1/1 (Train):   0%|          | 0/1 [00:00<?, ?it/s]  Epoch 1/1 (Train):   0%|          | 0/1 [00:02<?, ?it/s, loss=0.0356]  Epoch 1/1 (Train): 100%|##########| 1/1 [00:02<00:00,  2.27s/it, loss=0.0356]                                                                                   Epoch 1: Train Loss: 0.035553, Val Loss: 0.108443
-  Fine-tuning completado. Mejor Val Loss: 0.108443
-
---- Fine-Tuning para: AQI en Brasilia ---
-  Epoch 1/1 (Train):   0%|          | 0/1 [00:00<?, ?it/s]  Epoch 1/1 (Train):   0%|          | 0/1 [00:02<?, ?it/s, loss=0.103]  Epoch 1/1 (Train): 100%|##########| 1/1 [00:02<00:00,  2.11s/it, loss=0.103]                                                                                  Epoch 1: Train Loss: 0.103289, Val Loss: 0.118958
-  Fine-tuning completado. Mejor Val Loss: 0.118958
-
---- Iniciando Fase de Imputación para Brasilia ---
-
-Procesando Escenario: RandomRows_20percent
-  Imputando Rep 1:   0%|          | 0/2 [00:00<?, ?var/s]
-  Imputando:   0%|          | 0/1 [00:00<?, ?batch/s][A
-  Imputando: 100%|##########| 1/1 [00:27<00:00, 27.09s/batch][A
-                                                             [A  Imputando Rep 1:  50%|#####     | 1/2 [00:27<00:27, 27.17s/var]
-  Imputando:   0%|          | 0/1 [00:00<?, ?batch/s][A
-  Imputando: 100%|##########| 1/1 [00:25<00:00, 25.43s/batch][A
-                                                             [A  Imputando Rep 1: 100%|##########| 2/2 [00:52<00:00, 26.18s/var]  Imputando Rep 1: 100%|##########| 2/2 [00:52<00:00, 26.33s/var]
---- INICIO DEL SCRIPT: 2025-06-23 20:14:36 ---
-
---- 0. Carga de Datos y Modelo Base ---
-Datos originales cargados desde: CSVs\Air_Quality.csv
-Usando dispositivo: cuda
-Cargando modelo MOMENT base: AutonLab/MOMENT-1-large
-Modelo base cargado.
-
-
-==================== PROCESANDO CIUDAD: Brasilia ====================
-
---- Fine-Tuning para: CO en Brasilia ---
-  Epoch 1/1 (Train):   0%|          | 0/1 [00:00<?, ?it/s]  Epoch 1/1 (Train):   0%|          | 0/1 [00:02<?, ?it/s, loss=0.0313]  Epoch 1/1 (Train): 100%|##########| 1/1 [00:02<00:00,  2.08s/it, loss=0.0313]                                                                                   Epoch 1: Train Loss: 0.031286, Val Loss: 0.103052
-  Fine-tuning completado. Mejor Val Loss: 0.103052
-
---- Fine-Tuning para: AQI en Brasilia ---
-  Epoch 1/1 (Train):   0%|          | 0/1 [00:00<?, ?it/s]  Epoch 1/1 (Train):   0%|          | 0/1 [00:02<?, ?it/s, loss=0.113]  Epoch 1/1 (Train): 100%|##########| 1/1 [00:02<00:00,  2.13s/it, loss=0.113]                                                                                  Epoch 1: Train Loss: 0.113230, Val Loss: 0.134008
-  Fine-tuning completado. Mejor Val Loss: 0.134008
-
---- Iniciando Fase de Imputación para Brasilia ---
-
-Procesando Escenario: RandomRows_20percent
-  Imputando Rep 1:   0%|          | 0/2 [00:00<?, ?var/s]
-  Imputando:   0%|          | 0/1 [00:00<?, ?batch/s][A
-  Imputando: 100%|##########| 1/1 [00:28<00:00, 28.03s/batch][A
-                                                             [A  Imputando Rep 1:  50%|#####     | 1/2 [00:28<00:28, 28.08s/var]
-  Imputando:   0%|          | 0/1 [00:00<?, ?batch/s][A
-  Imputando: 100%|##########| 1/1 [00:24<00:00, 24.14s/batch][A
-                                                             [A  Imputando Rep 1: 100%|##########| 2/2 [00:52<00:00, 25.79s/var]  Imputando Rep 1: 100%|##########| 2/2 [00:52<00:00, 26.14s/var]
-    5 gráficos guardados en: c:\Users\felix\Documents\MÁSTER\TFM\TFM_Ambiental\AIR QUALITY\imputaciones\MOMENT_FT_final_MOMENT_1_large\plots\Brasilia\RandomRows_20percent
-
-Procesando Escenario: BlockRows_12h_20percent
-  Imputando Rep 1:   0%|          | 0/2 [00:00<?, ?var/s]
-  Imputando:   0%|          | 0/1 [00:00<?, ?batch/s][A
-                                                     [A  Imputando Rep 1:   0%|          | 0/2 [00:14<?, ?var/s]
