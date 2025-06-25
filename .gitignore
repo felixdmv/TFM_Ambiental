@@ -4,6 +4,6 @@
 # Ignore all CSV files in the CSVs folder
 # CSVs/
 *.pth
-*.png
-*.jpg
-*.jpeg
+#*.png
+#*.jpg
+#*.jpeg
