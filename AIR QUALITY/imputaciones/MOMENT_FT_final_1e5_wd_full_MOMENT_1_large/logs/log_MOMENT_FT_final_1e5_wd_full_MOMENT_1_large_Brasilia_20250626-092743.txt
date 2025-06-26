@@ -1,4 +1,4 @@
---- INICIO DEL SCRIPT: 2025-06-25 23:52:09 ---
+--- INICIO DEL SCRIPT: 2025-06-26 09:27:43 ---
 
 --- 0. Carga de Datos y Configuración ---
 Datos originales cargados desde: CSVs\Air_Quality.csv
@@ -7,4 +7,6 @@ Usando dispositivo para IMPUTACIÓN: cpu
 Vaciando caché de CUDA antes de empezar...
 
 
-==================== PROCESANDO CIUDAD: ['Brasilia', 'Cairo', 'Dubai'] ====================
+==================== PROCESANDO CIUDAD: Brasilia ====================
+
+--- Fine-Tuning para: CO en Brasilia ---
