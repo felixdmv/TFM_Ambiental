@@ -1,0 +1,6 @@
+Comparison,Statistic,p_value,Significant (p < 0.05),Conclusion
+Linear vs LSTM-VAE,0.0,0.0000,Yes,'Linear' es significativamente mejor.
+Linear vs MOMENT-FT,27.0,0.0000,Yes,'Linear' es significativamente mejor.
+Linear vs MOMENT-Pre,1.0,0.0000,Yes,'Linear' es significativamente mejor.
+Linear vs RF Imputer,7.0,0.0000,Yes,'Linear' es significativamente mejor.
+Linear vs SARIMA,466.0,0.0000,Yes,'Linear' es significativamente mejor.
