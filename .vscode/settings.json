@@ -1,4 +1,7 @@
 {
     "notebook.output.scrolling": true,
-    "notebook.output.textLineLimit": 10000
+    "notebook.output.textLineLimit": 10000,
+    "python-envs.defaultEnvManager": "ms-python.python:conda",
+    "python-envs.defaultPackageManager": "ms-python.python:conda",
+    "python-envs.pythonProjects": []
 }
